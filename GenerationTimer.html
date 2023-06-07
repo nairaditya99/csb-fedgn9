@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+
+    <!-- Display -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <!-- Identity -->
+    <title>Artisse AI Demo</title>
+    <meta name="description" content="Shock is a creative multipurpose theme for building websites. It is based on Bootstrap 5 and other of the best and most up-to-date code libraries used by professional developers in the world.">
+    <meta name="author" content="Codings">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/preloader.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/font-family.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css" />  
+    <link rel="stylesheet" href="assets/css/vendor/menu-engine.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/menu-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/dynamic-slider.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bricklayer.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.min.css" />
+  
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/core.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
+      
+      .countdown {
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 250px;
+        margin: 50px auto 0; /* Add margin-top */
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      }
+      
+      .time {
+        font-size: 4em;
+        margin: 0 10px;
+      }
+      
+      .countdown div:nth-child(2) {
+        font-size: 3em;
+      }
+
+      </style>
+  
+  </head>
+
+  <body class="shock-body">
+
+    
+
+    <header id="header" class="shock-header">
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar navbar-expand-lg has-top-bar fixed-scroll hover-line-center scheme-2 primary">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">    
+            <!-- Navbar-top -->
+            
+            <div class="navbar-divider horizontal-line-animate"></div>    
+            <!-- Navbar-bottom -->
+              <div class="navbar-bottom-wrapper fixed-scroll">
+                <div class="container">
+                  <div class="navbar-bottom">
+                      <!-- Brand -->
+                      <a class="navbar-brand" href="index.html" style="margin-top: 30px">
+                        <!-- <div class="site-title">Site Title</div> -->
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo main-logo" />
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo sticky-logo" />
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo mobile-logo" />
+                        <span class="logo-after-text" style="color: black;">Artisse AI</span>
+                      </a>
+                      <div class="button-wrapper" style="margin-top: 30px">
+                        <a id="retrain-button" href="#" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);">
+                          <span class="button-text white black-hover">Retrain Images ↻</span>
+                          
+                        </a>
+                        <a id="logout-button" href="#" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);">
+                          <span class="button-text white black-hover">Logout ⌧</span>
+                          
+                        </a>
+                        
+                      </div> 
+                    <!-- Responsive menu toggle -->
+                    
+                    <!-- Navbar links -->
+                    
+                      <!-- Link  Do not touch, it will break the nav bar-->
+                    </div>  
+                  </div>
+                </div>
+            </div>
+          </div> 
+        </div>
+        </nav> 
+    </header>
+    
+    <!-- Main -->
+    <main id="main" class="shock-main">
+
+      <!-- Bold -->
+      <section class="shock-section has-overlay">
+        <div class="banner">
+          <div class="content-wrapper">
+            <!-- Intro -->
+            <div class="basic-intro max-w-75 text-center">
+              <h1 class="title white">
+                <span class="text-1 d-block text-style-2">Your images are being generated</span>
+                
+              </h1>
+              
+
+              
+              <div id="timer" class="countdown">
+                <div id="minutes" class="time"></div>
+                <div>:</div>
+                <div id="seconds" class="time"></div>
+              </div>
+              
+              
+              
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="image-wrapper">
+            <img src="assets/images/jpg/backgroundpic.png" class="image vh-100 fit-cover" alt="This is an example description for this item." />
+          </div>
+
+          
+          <!-- Overlay -->
+          <div class="overlay black-75"></div>
+        </div>
+
+    
+      </section>
+
+    </main>
+
+    <!-- Vendor JavaScript -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendor/preloader.min.js"></script>
+    <script src="assets/js/vendor/inview.min.js"></script>
+    <script src="assets/js/vendor/menu-engine.min.js"></script>
+    <script src="assets/js/vendor/menu-grid.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/swiper.min.js"></script>
+    <script src="assets/js/vendor/anime.min.js"></script>
+    <script src="assets/js/vendor/dynamic-slider.min.js"></script>
+    <script src="assets/js/vendor/shuffle.min.js"></script>
+    <script src="assets/js/vendor/stickybits.min.js"></script>
+    <script src="assets/js/vendor/bricklayer.min.js"></script>
+    <script src="assets/js/vendor/lightbox.min.js"></script>
+    <script src="assets/js/vendor/typed.min.js"></script>
+    <script src="assets/js/vendor/progressbar.min.js"></script>
+    <script src="assets/js/vendor/map-styles.min.js"></script>
+    <script src="assets/js/vendor/magnetic-effect.min.js"></script>
+    <script src="assets/js/vendor/gsap.min.js"></script>
+    <script src="assets/js/vendor/aos.min.js"></script>
+    <script src="assets/js/vendor/lax.min.js"></script>
+    <script src="assets/js/vendor/cursor-effect.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+      function padTime(t) {
+        return t < 10 ? '0' + t : t;
+      }
+    
+      var countDownDate = new Date().getTime() + 1*60*1000;
+    
+      var countdown = setInterval(function() {
+        var now = new Date().getTime();
+        var timeLeft = countDownDate - now;
+    
+        if (timeLeft < 0) {
+          clearInterval(countdown);
+          document.getElementById("timer").innerHTML = '<a href="ShowGeneratedImage.html" class="button shadow rounded primary white-hover button-collision"><span class="button-text white black-hover">Continue 🡺</span></a>';
+        } else {
+          var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        
+          document.getElementById("minutes").innerHTML = padTime(minutes);
+          document.getElementById("seconds").innerHTML = padTime(seconds);
+        }
+      }, 1000);
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialog Modal</title>
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Button -->
+      <div class="btn-wrapper">
+        <button class="myBtn" id="myBtn">Click this</button>
+      </div>
+      <!-- Modal -->
+      <div class="modal-container" id="myModal">
+        <div class="modal-wrapper">
+          <div class="modal">
+            <header>
+              <h2>Title</h2>
+            </header>
+            <main>
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="text-wrapper">
+                <span>Sample text</span>
+              </div>
+            </main>
+            <footer>
+              <div class="btn-container">
+                <div class="cancel-wrapper">
+                  <button class="btn btn-cancel">Text</button>
+                </div>
+                <div class="delet-confirm-wrapper">
+                  <button class="btn btn-confirm">
+                    More text
+                  </button>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

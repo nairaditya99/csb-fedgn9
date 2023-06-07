@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+
+    <!-- Display -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <!-- Identity -->
+    <title>Artisse AI Demo</title>
+    <meta name="description" content="">
+    <meta name="author" content="Codings">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/preloader.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/font-family.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css" />  
+    <link rel="stylesheet" href="assets/css/vendor/menu-engine.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/menu-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/dynamic-slider.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bricklayer.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.min.css" />
+  
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/core.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+      /* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("assets/images/jpg/backgroundpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-bg: rgb(232, 246, 239);
+  --color-dark: rgb(34, 31, 30);
+  --color-dark-gray: rgb(255, 255, 255, 20%);
+  --color-orange: rgb(239, 137, 95);
+  --main-width: 356px; 
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: var(--main-width);
+  background-color: transparent;
+  border-radius: 1.25rem;
+  padding: 3.125rem 0;
+  text-align: center;
+  overflow: hidden;
+  animation: fadeInContent 1000ms ease-in-out;
+  transition: nonr 500ms ease-in-out;
+  transition-property: opacity, visibility;
+}
+
+.wrapper--has-fade {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slides-area {
+  display: flex;
+  transition: margin 500ms ease-in-out;
+}
+
+.slides-area__slide {
+  width: 100%;
+}
+
+.slide__image {
+  width: 90%;
+}
+
+.slide__text {
+  padding: 0 2.1875rem;
+}
+
+.slide__title {
+  font-size: min(10vw, 1.75rem);
+  font-weight: 600;
+  margin: 0;
+}
+
+.slide__paragraph {
+  font-size: 0.875rem;
+  font-weight: 100;
+  margin-top: 0.3125rem;
+}
+
+.button-next {
+  background-color: var(--color-orange);
+  border-radius: 0.625rem;
+  padding: 0.8125rem 2.25rem;
+  font-size: 1.15rem;
+  margin: 1.25rem 0;
+}
+
+.button-next--fade {
+  opacity: 0.3;
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+.paginations-area {
+  pointer-events: none;
+}
+
+.paginations-area__item {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.375rem;
+  background-color: gray;
+  border-radius: 1.5625rem;
+}
+
+.paginations-area__item:not(:last-child) {
+  margin-right: 0.25rem;
+}
+
+.paginations-area__item--current {
+  width: 1.5625rem;
+  background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);";
+  animation: activeItem 500ms ease-in-out;
+}
+
+@keyframes activeItem {
+  from {
+    width: 0.5rem;
+    background-color: transparent;
+  }
+
+  to {
+    width: 1.5625rem;
+    background-color: var(--color-white);
+  }
+}  
+    </style>  
+  
+  </head>
+
+  <body class="shock-body">
+
+    
+
+    <header id="header" class="shock-header">
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar navbar-expand-lg has-top-bar fixed-scroll hover-line-center scheme-2 primary">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">    
+            <!-- Navbar-top -->
+            
+            <div class="navbar-divider horizontal-line-animate"></div>    
+            <!-- Navbar-bottom -->
+              <div class="navbar-bottom-wrapper fixed-scroll">
+                <div class="container">
+                  <div class="navbar-bottom">
+                      <!-- Brand -->
+                      <a class="navbar-brand" href="index.html" style="margin-top: 30px">
+                        <!-- <div class="site-title">Site Title</div> -->
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo main-logo" />
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo sticky-logo" />
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo mobile-logo" />
+                        <span class="logo-after-text" style="color: black;">Artisse AI</span>
+                      </a>
+                      <div class="button-wrapper" style="margin-top: 30px">
+                        <a id="retrain-button" href="#" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);">
+                          <span class="button-text white black-hover">Retrain Images ↻</span>
+                          
+                        </a>
+                        <a id="logout-button" href="#" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);">
+                          <span class="button-text white black-hover">Logout ⌧</span>
+                          
+                        </a>
+                        
+                      </div> 
+                    <!-- Responsive menu toggle -->
+                    
+                    <!-- Navbar links -->
+                    
+                      <!-- Link  Do not touch, it will break the nav bar-->
+                    </div>  
+                  </div>
+                </div>
+            </div>
+          </div> 
+        </div>
+        </nav> 
+    </header>
+    
+    <!-- Main -->
+    <main id="main" class="shock-main" style="background-image: url("assets/images/jpg/backgroundpic.jpg");">
+
+     <!-- wrapper -->
+     
+
+  <!-- Slides Area -->
+  <div class="wrapper" style="width: 50%; margin: auto; margin-top: 150px">
+      
+        <section class="slides-area" style="width: 50%; margin: auto;">
+          <article class="slide slides-area__slide">
+            <img src="assets/images/jpg/flying.gif" alt="illustration" class="slide__image">
+
+            <div class="slide__text">
+              <h2 class="slide__title" style="color:black">Welcome to Artisse AI</h2>
+              <p class="slide__paragraph" style="color:black">
+                  Create stunning, photorealistic images with just a few clicks.
+              </p>
+            </div>
+          </article>
+          <article class="slide slides-area__slide">
+            <img src="assets/images/jpg/selfie.gif" alt="illustration" class="slide__image">
+
+            <div class="slide__text">
+              <h2 class="slide__title" style="color:black">Begin with Your Selfies</h2>
+              <p class="slide__paragraph" style="color:black">
+                  To kickstart the AI magic, we require a minimum of 15 images of you. These will be used to train our sophisticated AI model.
+              </p>
+            </div>
+          </article>
+          <article class="slide slides-area__slide">
+            <img src="assets/images/jpg/chilling.gif" alt="illustration" class="slide__image">
+
+            <div class="slide__text">
+              <h2 class="slide__title" style="color:black">Sit Back as Our AI Gets to Work</h2>
+              <p class="slide__paragraph" style="color:black">
+                  Our cutting-edge image training models will construct a detailed facial model based on your images. This process typically takes around 15-25 minutes. Feel free to take a break and return to generate your unique images.
+              </p>
+            </div>
+          </article>
+          <article class="slide slides-area__slide">
+              <img src="assets/images/jpg/speech.gif" alt="illustration" class="slide__image">
+  
+              <div class="slide__text">
+                <h2 class="slide__title" style="color:black">Craft Your Descriptive Prompts</h2>
+                <p class="slide__paragraph" style="color:black">
+                    The more detailed your description, the better the results. Use free-flowing text or select from our specific categories to guide the AI. Struggling to put it into words? No worries, simply attach an image as your prompt.
+                </p>
+              </div>
+            </article>
+            <article class="slide slides-area__slide">
+                <img src="assets/images/jpg/computer.gif" alt="illustration" class="slide__image">
+    
+                <div class="slide__text">
+                  <h2 class="slide__title" style="color:black">Powering Up the GPUs</h2>
+                  <p class="slide__paragraph" style="color:black">
+                      Once your prompts are in, our GPUs kick into high gear. Your personalized images will be ready for viewing in approximately 2 minutes.
+                  </p>
+                </div>
+              </article>
+              <article class="slide slides-area__slide">
+                  <img src="assets/images/jpg/glasses.gif" alt="illustration" class="slide__image">
+      
+                  <div class="slide__text">
+                    <h2 class="slide__title" style="color:black">The Future of Imagery Begins Here</h2>
+                    <p class="slide__paragraph" style="color:black">
+                        Press 'Get Started' and step into a new era of image creation with Artisse AI.
+                    </p>
+                  </div>
+                </article>
+                
+        </section>
+
+      
+
+        <!-- Next Button -->
+        <button class="button button-next" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%); color: white" aria-label="to get next slide">Next</button>
+
+        
+
+        <!-- Paginations Area -->
+        <section class="paginations-area"></section>
+        
+
+  </div>
+
+  
+  
+</main>
+<!-- End Wrapper -->
+
+      
+
+      
+
+    </main>
+
+    
+
+    <!-- Vendor JavaScript -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendor/preloader.min.js"></script>
+    <script src="assets/js/vendor/inview.min.js"></script>
+    <script src="assets/js/vendor/menu-engine.min.js"></script>
+    <script src="assets/js/vendor/menu-grid.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/swiper.min.js"></script>
+    <script src="assets/js/vendor/anime.min.js"></script>
+    <script src="assets/js/vendor/dynamic-slider.min.js"></script>
+    <script src="assets/js/vendor/shuffle.min.js"></script>
+    <script src="assets/js/vendor/stickybits.min.js"></script>
+    <script src="assets/js/vendor/bricklayer.min.js"></script>
+    <script src="assets/js/vendor/lightbox.min.js"></script>
+    <script src="assets/js/vendor/typed.min.js"></script>
+    <script src="assets/js/vendor/progressbar.min.js"></script>
+    <script src="assets/js/vendor/map-styles.min.js"></script>
+    <script src="assets/js/vendor/magnetic-effect.min.js"></script>
+    <script src="assets/js/vendor/gsap.min.js"></script>
+    <script src="assets/js/vendor/aos.min.js"></script>
+    <script src="assets/js/vendor/lax.min.js"></script>
+    <script src="assets/js/vendor/cursor-effect.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="tutorial.js"></script>
+    <script>
+
+    </script>
+
+  </body>
+</html>

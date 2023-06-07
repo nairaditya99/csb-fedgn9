@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+
+    <!-- Display -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <!-- Identity -->
+    <title>Artisse AI Demo</title>
+    <meta name="description" content="Shock is a creative multipurpose theme for building websites. It is based on Bootstrap 5 and other of the best and most up-to-date code libraries used by professional developers in the world.">
+    <meta name="author" content="Codings">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/preloader.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/font-family.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css" />  
+    <link rel="stylesheet" href="assets/css/vendor/menu-engine.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/menu-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/dynamic-slider.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bricklayer.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.min.css" />
+  
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/core.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="artisse.css" />
+
+
+    <!-- Include three.js library -->
+    <script src="three.min.js"></script>
+
+    <style>
+      #upload-section {
+        padding: 30px;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+  
+      #upload-section .upload-box {
+        max-width: 500px;
+        margin: auto;
+        border: 3px #ffffff;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      }
+  
+      #upload-section .upload-box input[type="file"] {
+        display: none;
+      }
+  
+      #upload-section .upload-box label {
+        padding: 10px;
+        background-color: transparent;
+        color: #000000;
+        cursor: pointer;
+      }
+  
+      #upload-section .img-container {
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+      }
+  
+      #upload-section .img-container img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+  
+      #upload-section .img-container .close {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255,255,255,0.8);
+        color: black;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+  
+      #upload-section .img-container:hover .close {
+        opacity: 1;
+      }
+
+      
+
+
+    </style>
+  
+  </head>
+
+  <body class="shock-body">
+
+    
+
+    <header id="header" class="shock-header">
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar navbar-expand-lg has-top-bar fixed-scroll hover-line-center scheme-2 primary">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">    
+            <!-- Navbar-top -->
+            
+            <div class="navbar-divider horizontal-line-animate"></div>    
+            <!-- Navbar-bottom -->
+              <div class="navbar-bottom-wrapper fixed-scroll">
+                <div class="container">
+                  <div class="navbar-bottom">
+                      <!-- Brand -->
+                      <a class="navbar-brand" href="index.html" style="margin-top: 30px">
+                        <!-- <div class="site-title">Site Title</div> -->
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo main-logo" />
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo sticky-logo" />
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo mobile-logo" />
+                        <span class="logo-after-text" style="color: black;">Artisse AI</span>
+                      </a>
+                      <div class="button-wrapper" style="margin-top: 30px">
+                        <a id="retrain-button" href="#" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);">
+                          <span class="button-text white black-hover">Retrain Images ↻</span>
+                          
+                        </a>
+                        <a id="logout-button" href="#" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);">
+                          <span class="button-text white black-hover">Logout ⌧</span>
+                          
+                        </a>
+                        
+                      </div> 
+                    <!-- Responsive menu toggle -->
+                    
+                    <!-- Navbar links -->
+                    
+                      <!-- Link  Do not touch, it will break the nav bar-->
+                    </div>  
+                  </div>
+                </div>
+            </div>
+          </div> 
+        </div>
+        </nav> 
+    </header>
+    
+    <!-- Main -->
+    <main id="main" class="shock-main">
+
+      <!-- Bold -->
+      <section class="shock-section has-overlay">
+        <div class="banner">
+          <div class="content-wrapper">
+            <!-- Intro -->
+            <div class="basic-intro max-w-75 text-center">
+              <h1 class="title white">
+                <span class="text-1 d-block text-style-2" style="color:black">Please upload at least 15 images of yourself</span>
+                
+              </h1>
+              
+
+              <div id="upload-section">
+          
+                <div class="upload-box" style="background-color:transparent">
+                  <input type="file" id="file-upload" accept=".png, .jpg, .jpeg" multiple>
+                  <label for="file-upload";">
+                    Click here to select 15 images
+                  </label>
+                  <div id="preview" style="margin-top: 20px;"></div>
+                  
+                  
+                </div>
+
+              
+              
+                <!-- Button -->
+                <div class="button-wrapper">
+                  <a id="continue-button" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);">
+                    <span class="button-text white black-hover">Continue</span>
+                    
+                  </a>
+                  
+                </div>
+              </div> 
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="image-wrapper">
+            <img src="assets/images/jpg/backgroundpic.jpg" class="image vh-100 fit-cover" alt="This is an example description for this item." />
+          </div>
+
+          
+          <!-- Overlay -->
+          <!--<div id="popup">
+            <div id="popup-content">
+              <p>Image uploading..</p>
+            </div>
+          </div>-->
+
+          <!-- Your HTML content -->
+    <div id="mobius-loader">
+      <div id="mobius-wrap"></div>
+    <p id="mobius-info">
+      Uploading photos...
+    </p>
+  </div>
+          
+
+    
+      </section>
+
+      <!-- Popup -->
+      
+      
+
+    </main>
+
+    <!-- Vendor JavaScript -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendor/preloader.min.js"></script>
+    <script src="assets/js/vendor/inview.min.js"></script>
+    <script src="assets/js/vendor/menu-engine.min.js"></script>
+    <script src="assets/js/vendor/menu-grid.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/swiper.min.js"></script>
+    <script src="assets/js/vendor/anime.min.js"></script>
+    <script src="assets/js/vendor/dynamic-slider.min.js"></script>
+    <script src="assets/js/vendor/shuffle.min.js"></script>
+    <script src="assets/js/vendor/stickybits.min.js"></script>
+    <script src="assets/js/vendor/bricklayer.min.js"></script>
+    <script src="assets/js/vendor/lightbox.min.js"></script>
+    <script src="assets/js/vendor/typed.min.js"></script>
+    <script src="assets/js/vendor/progressbar.min.js"></script>
+    <script src="assets/js/vendor/map-styles.min.js"></script>
+    <script src="assets/js/vendor/magnetic-effect.min.js"></script>
+    <script src="assets/js/vendor/gsap.min.js"></script>
+    <script src="assets/js/vendor/aos.min.js"></script>
+    <script src="assets/js/vendor/lax.min.js"></script>
+    <script src="assets/js/vendor/cursor-effect.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="ImageUpload.js"></script>
+    <script src="ImageUploadLoader.js"></script>
+
+
+
+    <!--When a user selects images via the file input, a preview of each image 
+        is displayed on the page, and the associated file object is stored in the 
+        img.file property for later use.
+
+        If the user clicks the "Continue" button, the event listener first checks 
+        whether the number of selected images is exactly 15. If not, an alert message 
+        is displayed and the function returns.
+
+        If there are exactly 15 images, the uploadImage function is called for each image. 
+        This function takes a file object, creates a FormData object with the file, sends 
+        a POST request to the upload URL, and finally returns the URL of the uploaded image. 
+        This is done concurrently for all images using Promise.all.
+
+        After all images have been uploaded and their URLs have been returned, 
+        a POST request is sent to the training API with the list of image URLs.
+
+        If the request to the training API is successful, a message is logged to 
+        the console, and the user is redirected to 'TrainingTimer.html'. If the 
+        request fails, an error message is logged to the console.-->
+
+
+
+        
+
+  </body>
+</html>

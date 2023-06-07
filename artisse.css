@@ -1,0 +1,56 @@
+#popup {
+  display: block;
+  position: fixed;
+  z-index: 1000000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#popup-content {
+  position: relative;
+  margin: 15% auto;
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#mobius-loader {
+  display: none;
+}
+#mobius-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 11;
+}
+#mobius-wrap canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 500px;
+  margin: -250px 0 0 -250px;
+}
+
+#mobius-info {
+  font-family: "Poppins";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55vh;
+  font-size: 24px;
+  color: #ddd;
+  line-height: 2em;
+  text-align: center;
+  z-index: 12;
+}

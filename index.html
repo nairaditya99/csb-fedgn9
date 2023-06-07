@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+
+    <!-- Display -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <!-- Identity -->
+    <title>Artisse AI Demo</title>
+    <meta name="description" content="">
+    <meta name="author" content="Codings">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/preloader.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/font-family.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css" />  
+    <link rel="stylesheet" href="assets/css/vendor/menu-engine.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/menu-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/dynamic-slider.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/bricklayer.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.min.css" />
+  
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/core.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  
+  </head>
+
+  <body class="shock-body">
+
+    
+
+    <header id="header" class="shock-header">
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar navbar-expand-lg has-top-bar fixed-scroll hover-line-center scheme-2 primary">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">    
+            <!-- Navbar-top -->
+            
+            <div class="navbar-divider horizontal-line-animate"></div>    
+            <!-- Navbar-bottom -->
+              <div class="navbar-bottom-wrapper fixed-scroll">
+                <div class="container">
+                  <div class="navbar-bottom">
+                      <!-- Brand -->
+                      <a class="navbar-brand" href="index.html" style="margin-top: 30px">
+                        <!-- <div class="site-title">Site Title</div> -->
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo main-logo" />
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo sticky-logo" />
+                        <img src="assets/images/logo.svg" alt="Shock Theme" class="logo mobile-logo" />
+                        <span class="logo-after-text" style="color: black;">Artisse AI</span>
+                      </a>
+                      <div class="button-wrapper" style="margin-top: 30px">
+                        <a id="retrain-button" href="#" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);">
+                          <span class="button-text white black-hover">Retrain Images ↻</span>
+                          
+                        </a>
+                        <a id="logout-button" href="#" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);">
+                          <span class="button-text white black-hover">Logout ⌧</span>
+                          
+                        </a>
+                        
+                      </div> 
+                    <!-- Responsive menu toggle -->
+                    
+                    <!-- Navbar links -->
+                    
+                      <!-- Link  Do not touch, it will break the nav bar-->
+                    </div>  
+                  </div>
+                </div>
+            </div>
+          </div> 
+        </div>
+        </nav> 
+    </header>
+    
+    <!-- Main -->
+    <main id="main" class="shock-main" >
+
+      <!-- Bold -->
+      <section class="shock-section has-overlay">
+        <div class="banner">
+          <div class="content-wrapper">
+            <!-- Intro -->
+            <div class="basic-intro max-w-75 text-center">
+              <h1 class="title white">
+                <span class="text-1 d-block text-style-2" style="color:black">Login</span>
+                <span class="text-2 d-block text-style-4 text-italic"><mark class="animated-underline primary"></mark></span>
+              </h1>
+              <div class="form-area" style="width: 50%; margin: auto;">
+              <div class="form-row row">
+                <div class="form-col col-12" style="align-items: center;">
+                  <label for="InputBasicText" class="form-label" style="color: black;">User Name</label>
+                  <input type="text" class="form-control rounded-3" style="border: 1px solid;"  id="InputBasicTextUsername">
+                </div>
+              </div>
+              <div class="form-row row" style="margin-top: 30px;">
+                <div class="form-col col-12">
+                  <label for="InputBasicText" class="form-label" style="color: black;">Password</label>
+                  <input type="password" class="form-control rounded-3" style="border: 1px solid;" id="InputBasicTextPassword">
+                </div>
+              </div>
+            </div>
+
+            <div class="button-wrapper">
+              <button type="submit" class="button shadow rounded primary white-hover button-collision" style="background: linear-gradient(130deg, rgba(248,198,58,1) 0%, rgba(216,125,221,1) 50%, rgba(89,209,233,1) 100%);" onclick="authenticate(event)">
+                  <span class="button-text white black-hover">Continue</span>
+              </button>
+          </div>
+          
+
+          
+
+              
+              
+              
+    
+              
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="image-wrapper">
+            <img src="assets/images/jpg/backgroundpic.jpg" class="image vh-100 fit-cover" alt="This is an example description for this item." />
+          </div>
+
+          
+          <!-- Overlay -->
+          
+
+    
+      </section>
+
+    </main>
+
+    <!-- Vendor JavaScript -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendor/preloader.min.js"></script>
+    <script src="assets/js/vendor/inview.min.js"></script>
+    <script src="assets/js/vendor/menu-engine.min.js"></script>
+    <script src="assets/js/vendor/menu-grid.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/swiper.min.js"></script>
+    <script src="assets/js/vendor/anime.min.js"></script>
+    <script src="assets/js/vendor/dynamic-slider.min.js"></script>
+    <script src="assets/js/vendor/shuffle.min.js"></script>
+    <script src="assets/js/vendor/stickybits.min.js"></script>
+    <script src="assets/js/vendor/bricklayer.min.js"></script>
+    <script src="assets/js/vendor/lightbox.min.js"></script>
+    <script src="assets/js/vendor/typed.min.js"></script>
+    <script src="assets/js/vendor/progressbar.min.js"></script>
+    <script src="assets/js/vendor/map-styles.min.js"></script>
+    <script src="assets/js/vendor/magnetic-effect.min.js"></script>
+    <script src="assets/js/vendor/gsap.min.js"></script>
+    <script src="assets/js/vendor/aos.min.js"></script>
+    <script src="assets/js/vendor/lax.min.js"></script>
+    <script src="assets/js/vendor/cursor-effect.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- User authentication script -->
+    <script src="auth.js"></script>
+
+
+    <div id="mobileError" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.85); color:white; z-index:10000; text-align:center; padding-top:20%;">
+      <h1>Sorry, this demo is not available on mobile devices. Please use a desktop.</h1>
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded2", function(event) {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      var isSmallScreen = window.innerWidth <= 300 || window.innerHeight / window.innerWidth > 1;
+      if (isMobile || isSmallScreen) {
+        document.getElementById('mobileError').style.display = 'block';
+      }
+    });
+  </script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+   
+
+    
+
+    
+  </body>
+</html>
